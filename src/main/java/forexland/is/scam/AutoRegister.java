@@ -27,6 +27,16 @@ public class AutoRegister {
     driver = new ChromeDriver(driverService, options);
     js = (JavascriptExecutor) driver;
 
+    // テスト開始メッセージ
+    System.out.println("FOREXLANDという海外FXブローカーは入金した人の資金を出金させないで着服する詐欺ブローカーです。");
+    System.out.println("おそらく、ロシアが軍事費を捻出するために構築したブローカーと思われます。");
+    System.out.println("もう一つは、振り込め詐欺の変種であることが考えられます。");
+    System.out.println("銀行口座を買い取り、その口座にアフィリエイト報酬という名目で着服したお金を振り込むという手段です。");
+    System.out.println("100万円以下なら税務署もキャッチできないので、無税扱いということでマネーロンダリングにも応用ができるという悪質なものです。");
+    System.out.println("また、concept3.co.jp のドメインはGEMFOREXが禁止しているボーナスアービトラージを企画した企業であることが考えられます。");
+    System.out.println("詳しくは https://realgemforex.hatenablog.com/entry/gemforex に掲載しています。");
+    System.out.println("告発後にHP、ツイッターアカウントを閉鎖している意図が不明です。");
+    System.out.println("ボーナスアービトラージに企画による報酬を支払う原資がGEMFOREXに凍結されたため、報酬未払いによる債権者からの逃亡が推察されます。");
   }
 
   @After
