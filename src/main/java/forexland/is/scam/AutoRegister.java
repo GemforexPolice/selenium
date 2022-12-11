@@ -36,16 +36,15 @@ public class AutoRegister {
 
   @Test
   public void doRegister() {
-    // TODO 環境変数からうまく取得できないかも @以下を直接編集するしかない
     String mailDomain =
       Optional.ofNullable(System.getenv("MAIL_DOMAIN")).orElse("@concept3.co.jp");
-    // TODO 環境変数からうまく取得できないかも 数値を直接編集するしかない
     int times =
       Integer.parseInt(Optional.ofNullable(System.getenv("TIMES")).orElse("1000"));
 
     String tel = "12340110";
     String moji = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
+    // 3つの引数を受け取るTriConsumerを別途作成(作成してくれた方に脱帽!!)
     TriConsumer<WebDriver, String, String> doInput = (driver, key, value) -> {
       driver.findElement(By.id(key)).click();
       driver.findElement(By.id(key)).sendKeys(value);
@@ -78,7 +77,7 @@ public class AutoRegister {
           builder.doubleClick(element).perform();
         }
       } catch (Exception e) {
-        System.out.println("Exception!!" + e.getMessage());
+//        System.out.println("Exception!!" + e.getMessage());
       } finally {
         System.out.println("Finish!!: " + mailAddress);
       }
