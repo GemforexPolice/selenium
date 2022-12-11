@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="テスト実行(forexland)" type="JUnit" factoryName="JUnit">
+    <module name="selenium" />
+    <option name="PACKAGE_NAME" value="forexland.is.scam" />
+    <option name="MAIN_CLASS_NAME" value="forexland.is.scam.AutoRegister" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <envs>
+      <env name="MAIL_DOMAIM" value="@forexland-fx.com" />
+      <env name="TIMES" value="10" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
